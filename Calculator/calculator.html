@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Calculator</title>
+
+    <script type="text/javascript" src="calculator.js"></script>
+
+<style type="text/css">
+body{background-color:#f5fffa;}
+		
+.calculator
+{
+width:210px;
+height:240px;
+border-style: solid;
+border-width: 1px;
+border-color:#00FF00;
+margin: 200px auto 0px auto;
+display:block;	  
+}
+
+.calculator td b 
+{
+text-align: center;
+margin-top:25px;
+display:block;
+}
+
+.calculator input[type=text]
+{
+margin-left:20px;	
+}
+
+.calculator input[type=button]
+{
+margin-top:2px;
+margin-left:1px;
+font-weight:bold;
+}
+
+.calculator input[type=text]:focus
+{
+outline:none;
+border: 0.50px solid black;
+border-left: 5px solid blue;
+margin-left:10px;
+}
+
+.calculator td hr 
+{
+margin-left:2px;	
+}
+</style>
+
+</head>
+<body>
+
+<div class="calculator">
+<table>
+<tr>
+<td><b>Hesap Makinesi</b></td>
+</tr>
+<tr>
+<td><hr></td>
+</tr>
+<tr>
+<td><input type="text" name="s1" placeholder=" Birinci sayı" id="s1"/></td>
+</tr>
+<tr>
+<td><input type="text" name="s2" placeholder=" İkinci sayı" id="s2"/></td>
+</tr>
+<tr>
+<td><hr></td>
+</tr>
+<tr>
+<td>
+<input type="button" value=" + " onclick="toplama()"/> 
+<input type="button" value=" - " onclick="cıkarma()"/>
+<input type="button" value=" * " onclick="carpma()"/>
+<input type="button" value=" / " onclick="bölme()"/>
+<input type="button" value="Temizle" onclick="temizle()"/>
+</td>
+</tr>
+<tr>
+<td><br><input type="text" placeholder="sonuç" id="sonuc" readonly></td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

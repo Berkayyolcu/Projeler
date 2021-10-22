@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+
+	<title> Font Color</title>
+
+	<script type="text/javascript" src="font_color.js"></script>
+
+<style type="text/css">
+body{background-color:#f2f2f2;}
+
+.writing
+{
+width:220px;
+height:140px;
+border-style:solid;
+border-width:2px;
+border-color:#1E90FF;
+margin:250px auto 50px auto;
+}
+
+.writing b
+{	
+margin-left:75px;
+margin-top:20px;
+display:block;
+}
+
+.writing input 
+{
+margin-left:16px;
+margin-top:35px;
+font-weight:bold;		
+}
+
+.writing input[type=button]:focus
+{
+background-color:#f0f8ff;
+}
+</style>
+
+</head>
+<body>
+
+<div class="writing">
+<b id="p">Yazı Rengi</b>
+<input type="button" value="Kırmızı" onclick="red()">
+<input type="button" value="yesil" onclick="green()">
+<input type="button" value="sarı" onclick="yellow()">
+<br><br>
+</div>
+
+</body>
+</html>
